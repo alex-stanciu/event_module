@@ -1,0 +1,15 @@
+langcode: en
+status: true
+dependencies:
+  module:
+    - event
+id: event
+plugin_id: event
+granularity: resource
+configuration:
+  methods:
+    - GET
+  formats:
+    - json
+  authentication:
+    - cookie

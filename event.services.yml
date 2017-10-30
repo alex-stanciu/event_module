@@ -1,0 +1,5 @@
+services:
+  event.event_normalizer:
+    class: Drupal\event\Normalizer\EventNormalizer
+    tags:
+      - { name: normalizer, priority: 2 }

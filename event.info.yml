@@ -1,0 +1,7 @@
+name: Event module
+description: Provides an event content type and custom functionalities for this conten type
+type: module
+core: 8.x
+dependencies:
+  - rest
+  - node
