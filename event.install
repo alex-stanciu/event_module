@@ -1,0 +1,13 @@
+<?php
+
+/**
+ * {@inheritdoc}
+ */
+function event_install() {
+  // Adds the permissions needed for the anonymous users.
+  $configuration = Drupal::configFactory()->getEditable('user.role.anonymous');
+  $permissions = $configuration->get('permissions');
+  $permissions[] = 'restful get event';
+  $configuration->set('permissions', $permissions);
+  $configuration->save();
+}
